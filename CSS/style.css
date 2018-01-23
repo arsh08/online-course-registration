@@ -5,3 +5,10 @@ box-sizing: border-box;
 body {
      background-colour; light blue
 }
+
+.container{
+  max-width:1170px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1em;
+}
