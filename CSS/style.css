@@ -1,6 +1,18 @@
 *{
 box-sizing: border-box;
 }
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
 
 
 }
@@ -21,9 +33,9 @@ box-sizing: border-box;
      float: left;
      color: #f2f2f2;
      text-align: center;
-     padding: 14px 16px;
+     padding: 12px 14px;
      text-decoration: none;
-     font-size: 17px;
+     font-size: 20px;
 }
 
 .topnav a:hover {
@@ -41,7 +53,7 @@ box-sizing: border-box;
 }
 
 .topnav input[type=text] {
-  padding: 6px;
+  padding: 13px;
   margin-top: 8px;
   font-size: 17px;
   border: none;
@@ -49,8 +61,9 @@ box-sizing: border-box;
 
 .topnav .search-container button {
   float: right;
-  padding: 6px 10px;
+  padding: 1px 1px;
   margin-top: 8px;
+  margin-bottom: 8px;
   margin-right: 16px;
   background: #ddd;
   font-size: 17px;
@@ -70,27 +83,26 @@ box-sizing: border-box;
     float: none;
     display: block;
     text-align: left;
-    width: 100%;
+    width: 80%;
     margin: 0;
-    padding: 14px;
+    padding: 12px;
   }
    .topnav input[type=text] {
-    border: 1px solid #ccc;  
+    border: 1px solid #ccc;
   }
- 
-}
 
+}
 .icon-bar {
     width: 100%;
-    background-color: #555;
+    background-color: #ccc;
     overflow: auto;
 }
 
 .icon-bar a {
-    float: left;
-    width: 10%;
+    float: right;
+    width: 3%;
     text-align: center;
-    padding: 5px 0;
+    padding: 10px 0;
     transition: all 0.3s ease;
     color: white;
     font-size: 20px;
