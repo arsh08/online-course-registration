@@ -33,7 +33,7 @@ box-sizing: border-box;
      float: left;
      color: #f2f2f2;
      text-align: center;
-     padding: 12px 14px;
+     padding: 12px 12px;
      text-decoration: none;
      font-size: 20px;
 }
@@ -48,9 +48,6 @@ box-sizing: border-box;
   color: white;
 }
 
-.topnav .search-container {
-  float: right;
-}
 
 .topnav input[type=text] {
   padding: 13px;
@@ -59,17 +56,7 @@ box-sizing: border-box;
   border: none;
 }
 
-.topnav .search-container button {
-  float: right;
-  padding: 1px 1px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
+
 
 .topnav .search-container button:hover {
   background: #ccc;
@@ -138,11 +125,12 @@ button {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 8px 8px;
     border: none;
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+    float: right;
 }
 
 button:hover {
@@ -221,5 +209,56 @@ hr {
 @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
        width: 100%;
+    }
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+}
+
+input[type=submit] {
+    background-color: #ccc;
+    color: 333;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container2 {
+    border-radius: 5px;
+    background-color: #7F8C8D;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
     }
 }
